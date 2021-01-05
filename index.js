@@ -6,7 +6,7 @@ const logger = {
         return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.red('ERROR')} ${text}`);
     },
     warn(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.keyword('ornage')('WARN')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.keyword('orange')('WARN')} ${text}`);
     },
     ready(text) {
         return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
