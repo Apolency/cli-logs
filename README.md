@@ -7,3 +7,13 @@ const cl = require('cli-logs');
 
 cl.ready('Node is ready!');
 ```
+
+# Available Options
+```js
+const cl = require('cli-logs');
+
+cl.ready();
+cl.error();
+cl.warn();
+```
+More options will be added soon!
