@@ -15,5 +15,8 @@ const cl = require('cli-logs');
 cl.ready();
 cl.error();
 cl.warn();
+cl.event();
+cl.load();
+cl.connect();
 ```
 More options will be added soon!
