@@ -3,5 +3,7 @@ A useful tools for logging thing in the terminal
 
 # Examples
 ```js
-test.stuff(0
+const cl = require('cli-logs');
+
+cl.ready('Node is ready!');
 ```
