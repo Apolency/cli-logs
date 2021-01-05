@@ -10,6 +10,15 @@ const logger = {
     },
     ready(text) {
         return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
+    },
+    event(text) {
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('EVENT')} ${text}`);
+    },
+    load(text) {
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.gray('LOAD')} ${text}`);
+    },
+    connect(text) {
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
     }
 };
 
