@@ -1,6 +1,12 @@
 # cli-logs
 A useful tools for logging thing in the terminal
 
+# Download
+Just run
+```
+npm i cli-logs
+```
+
 # Examples
 ```js
 const cl = require('cli-logs');
