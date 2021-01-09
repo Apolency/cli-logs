@@ -19,6 +19,12 @@ const logger = {
     },
     connect(text) {
         return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
+    },
+    debug(text) {
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('DEBUG')} ${text}`);
+    },
+    cmd(text) {
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('CMD')} ${text}`);
     }
 };
 
