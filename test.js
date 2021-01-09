@@ -10,4 +10,3 @@ cl.load(a);
 cl.connect(a);
 cl.debug(a);
 cl.cmd(a);
-cl.cmd(a);
