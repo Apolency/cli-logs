@@ -18,5 +18,13 @@ cl.warn();
 cl.event();
 cl.load();
 cl.connect();
+cl.debug();
+cl.cmd();
 ```
 More options will be added soon!
+
+# Test
+To test, simply run
+```
+npm run test
+```
