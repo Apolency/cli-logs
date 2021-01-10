@@ -1,30 +1,29 @@
 const chalk = require('chalk');
-const moment = require('moment');
 
 const logger = {
     error(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.red('ERROR')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.red('ERROR')} ${text}`);
     },
     warn(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.keyword('orange')('WARN')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.keyword('orange')('WARN')} ${text}`);
     },
     ready(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.green('READY')} ${text}`);
     },
     event(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('EVENT')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.blue('EVENT')} ${text}`);
     },
     load(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.gray('LOAD')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.gray('LOAD')} ${text}`);
     },
     connect(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.green('READY')} ${text}`);
     },
     debug(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('DEBUG')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.blue('DEBUG')} ${text}`);
     },
     cmd(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('CMD')} ${text}`);
+        return console.log(`[${new Date().toISOString()}]: ${chalk.blue('CMD')} ${text}`);
     }
 };
 
