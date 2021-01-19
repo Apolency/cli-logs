@@ -1,6 +1,9 @@
 # Cli-Logs V2
 A useful tools for logging thing in the terminal.
 
+# Note
+Due to some errors with TypeScript, TypeScript support has been removed.
+
 # Download
 Just run:
 ```
