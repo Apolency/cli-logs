@@ -1,6 +1,5 @@
 # Cli-Logs V2
 A useful tools for logging thing in the terminal.
-Now with TypeScript support
 
 # Download
 Just run:
