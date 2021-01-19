@@ -1,5 +1,5 @@
 const moment = require('moment');
-const chalk = require('chalk');
+const { keyword, red, green, blue, gray } = require('chalk')
 
 const logger = {
     /**
@@ -20,64 +20,64 @@ const logger = {
             throw new TypeError('You must suply a text');
         };
         
-        console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.keyword(color)(type)} ${text}`);
+        console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${keyword(color)(type)} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     error(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.red('ERROR')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${red('ERROR')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     warn(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.keyword('orange')('WARN')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${keyword('orange')('WARN')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     ready(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('READY')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${green('READY')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     event(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('EVENT')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${blue('EVENT')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     load(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.gray('LOAD')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${gray('LOAD')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     connect(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.green('CONNECT')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${green('CONNECT')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     debug(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('DEBUG')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${blue('DEBUG')} ${text}`);
     },
 
     /**
      * @param {String} text - Text to be logged
      */
     cmd(text) {
-        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${chalk.blue('CMD')} ${text}`);
+        return console.log(`[${moment().format("DD-MM-YY H:m:s")}]: ${blue('CMD')} ${text}`);
     }
 };
 
-module.exports = logger
+module.exports.logger
