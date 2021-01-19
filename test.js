@@ -1,7 +1,10 @@
 const cl = require('cli-logs');
 
-const a = 'Testing text'
+const a = 'Testing text';
+const b = 'TESTING TYPE';
+const c = 'red';
 
+cl.log(a, b, c);
 cl.ready(a);
 cl.error(a);
 cl.warn(a);
